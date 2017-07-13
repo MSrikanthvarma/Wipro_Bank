@@ -1,4 +1,4 @@
-package org.com.example
+package org.com.PartialFunction
 
 import org.junit.Test;
 import org.hamcrest.MatcherAssert._

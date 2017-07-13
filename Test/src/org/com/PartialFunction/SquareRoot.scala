@@ -1,4 +1,4 @@
-package org.com.example
+package org.com.PartialFunction
 
 class SquareRoot {
   val squareRoot = new PartialFunction[Double, Double] {

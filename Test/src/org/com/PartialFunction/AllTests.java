@@ -1,4 +1,4 @@
-package org.com.example;
+package org.com.PartialFunction;
 
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
