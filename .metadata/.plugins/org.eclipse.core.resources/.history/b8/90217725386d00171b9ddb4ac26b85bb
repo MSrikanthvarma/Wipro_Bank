@@ -1,0 +1,31 @@
+package com.bankproject;
+
+public class WiproBank {
+	public static final int min_balance = 1000;
+	public int balance, avail_balance, age;
+	public String name, address;
+
+	public static void main(String[] args) {
+		WiproBank customer1 = new WiproBank();
+		WiproBank customer2 = new WiproBank();
+		customer1.deposite(2000);
+		System.out.println(customer1.balanceEnquiry());
+		customer1.withdrawal(500);
+		System.out.println(customer1.balanceEnquiry());
+	}
+
+	void deposite(int amount) {
+		balance += amount;
+	}
+
+	void withdrawal(int amount) {
+		if (balance - amount > min_balance)
+			balance -= amount;
+		else
+			System.out.println("Insufficient balance");
+	}
+
+	int balanceEnquiry() {
+		return balance;
+	}
+}

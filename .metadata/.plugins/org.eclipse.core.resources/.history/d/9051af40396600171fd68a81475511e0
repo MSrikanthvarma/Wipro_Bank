@@ -1,0 +1,15 @@
+
+
+class CompanionObjectUse {
+
+}
+
+case class Dollar(value: Double)
+case class Euro(value: Double)
+case class Rupee(value: Double)
+
+object Dollar {
+  implicit def dollarToRupee(dollar: Dollar): Rupee = {
+
+  }
+}

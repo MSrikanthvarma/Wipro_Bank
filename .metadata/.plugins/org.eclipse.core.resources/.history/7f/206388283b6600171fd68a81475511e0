@@ -1,0 +1,5 @@
+
+object conversions extends App {
+  val a: Rupee = Euro(2)
+  println(a.value)
+}

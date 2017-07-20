@@ -1,0 +1,23 @@
+package com.bankproject;
+
+public class WiproBank {
+	int balance, avail_balance, age, min_balance;
+	String name, address;
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+	void deposite(int amount) {
+		balance += amount;
+	}
+
+	void withdrawal(int amount) {
+		if (balance - amount > min_balance)
+			balance -= amount;
+		else
+			System.out.println("Insufficient balance");
+	}
+
+}

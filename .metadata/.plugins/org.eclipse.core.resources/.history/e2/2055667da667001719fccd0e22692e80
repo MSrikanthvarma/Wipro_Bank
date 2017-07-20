@@ -1,0 +1,15 @@
+package org.com.example
+
+import org.junit.Assert._;
+
+import org.junit.Test;
+
+class TestClass {
+
+  @Test
+  def test() {
+    val ob = new SquareRoot
+    assertEquals(2, ob.squareRoot(4))
+    println("Square root of 4 is 2")
+  }
+}

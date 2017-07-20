@@ -1,0 +1,24 @@
+package org.com.example.test
+
+import junit.framework.TestCase
+import org.junit.Assert._
+import org.com.example.SquareRoot
+import org.junit.runner.JUnitCore
+
+class SquareRootTest extends TestCase {
+  var root: SquareRoot = null
+
+  override def setUp() {
+    root = new SquareRoot
+  }
+
+  def testSquareRoot() {
+    assertEquals(2, root.squareRoot(4))
+  }
+}
+
+object runTest {
+  def main(args: Array[String]): Unit = {
+    JUnitCore.runClasses(classOf[SquareRootTest])
+  
+}

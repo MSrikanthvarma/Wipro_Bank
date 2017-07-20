@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;Companion_object&apos;&#x0A;- Original project: &apos;Companion_object&apos;&#x0A;- Original element: &apos;UseCase.scala&apos;" description="Delete element" element1="src/org/com/scala/companionobject/UseCase.scala" elements="0" flags="589830" id="org.eclipse.jdt.ui.delete" resources="1" stamp="1499931981066" subPackages="false" version="1.0"/>
+</session>

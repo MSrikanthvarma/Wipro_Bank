@@ -1,0 +1,10 @@
+package org.scala.PartialFunction
+
+object SquareRoot {
+
+  val squareRoot = new PartialFunction[Int, Int] {
+    def isDefinedAt() {
+
+    }
+  }
+}

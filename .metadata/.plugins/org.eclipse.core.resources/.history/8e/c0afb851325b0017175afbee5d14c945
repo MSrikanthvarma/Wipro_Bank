@@ -1,0 +1,16 @@
+package org.com.sample.spark
+
+import org.apache.spark.SparkConf
+import com.datastax.spark.connector.streaming._
+import org.apache.spark.streaming.StreamingContext
+import org.apache.spark.streaming.Seconds
+
+object Pipeline {
+  def main(args: Array[String]): Unit = {
+    val conf = new SparkConf().setAppName("pipeline").setMaster("local[*]").set("spark.cassandra.connection.host", "127.0.0.1")
+    val streamingContext = new StreamingContext(conf, Seconds(10))
+    streamingContext.cassandraTable("mykeyspace", "employee")
+    streamingContext.start()
+    streamingContext.awaitTermination()
+  }
+}

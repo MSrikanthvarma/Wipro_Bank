@@ -1,0 +1,63 @@
+import org.com.example.test.SquareRootTest;
+import org.junit.runner.JUnitCore;
+
+import static org.junit.Assert.*;
+import junit.framework.Assert;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.runner.JUnitCore;
+import org.junit.runner.Result;
+import org.junit.runner.notification.Failure;
+
+public class TestRunner {
+
+	/**
+	 * @throws java.lang.Exception
+	 */
+	@Before
+	public void setUp() throws Exception {
+		System.out.println("Setting up ...");
+	}
+
+	/**
+	 * @throws java.lang.Exception
+	 */
+	@After
+	public void tearDown() throws Exception {
+		System.out.println("Tearing down ...");
+	}
+
+	/**
+	 * Test method for {@link Ball#getCoordinates()}.
+	 */
+	@Test
+	public void testGetCoordinates() {
+		// statement above.
+	}
+
+	/**
+	 * Test method for {@link Ball#setCoordinates(Point2D)}.
+	 */
+	@Test
+	public void testSetCoordinates() {
+	}
+
+	/**
+	 * Test method for {@link Ball#Ball(Point2D)}.
+	 */
+	@Test
+	public void testBall() {
+
+		// fail("Not yet implemented");
+	}
+
+	public static void main(String[] args) {
+		Result result = JUnitCore.runClasses(TestRunner.class);
+		for (Failure failure : result.getFailures()) {
+			System.out.println(failure.toString());
+		}
+		System.out.println(result.wasSuccessful());
+	}
+
+}

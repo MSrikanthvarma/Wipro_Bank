@@ -1,0 +1,15 @@
+package org.com.test
+
+class SquareRoot {
+  val squareRoot = new PartialFunction[Double, Double] {
+    def isDefinedAt(x: Double) = {
+      x >= 0
+    }
+    def apply(x: Double) = {
+      math.sqrt(x)
+    }
+  }
+  def squareRoot1(a: Double) = {
+    math.sqrt(a)
+  }
+}

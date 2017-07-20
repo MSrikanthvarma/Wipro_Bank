@@ -1,0 +1,5 @@
+package org.scala.dependencyInjection
+
+class EmailService {
+  
+}

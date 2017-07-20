@@ -1,0 +1,20 @@
+package org.scala.CaseClass
+
+object Area extends App {
+  val shape: Shape = Rectangle(3, 4)
+  val area = shape match {
+    case Rectangle(len, wid) => len * wid
+    case Circle(rad)         => math.Pi * rad * rad
+    case Square(side)        => side * side
+    case _                   => print("Specified shape is not present")
+  }
+  def max[T](a: T, b: T)(implicit $ev1: Function1[T, Ordered[T]]): T = if ($ev1(a) < b) b else a
+
+  println(area)
+}
+
+trait Shape
+
+case class Rectangle(length: Int, width: Int) extends Shape
+case class Square(side: Int) extends Shape
+case class Circle(radius: Int) extends Shape

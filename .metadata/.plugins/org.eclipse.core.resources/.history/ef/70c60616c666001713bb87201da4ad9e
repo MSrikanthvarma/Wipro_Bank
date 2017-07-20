@@ -1,0 +1,5 @@
+import scala.runtime.LazyInt
+
+object fibonacci extends App {
+  lazy val array
+}

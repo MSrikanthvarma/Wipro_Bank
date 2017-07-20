@@ -1,0 +1,13 @@
+package org.scala.CaseClass
+
+object Area {
+  val shape = Rectangle(3, 4)
+  shape match {
+    case Rectangle(_, _) =>
+    case Square(_)       =>
+  }
+}
+
+case class Rectangle(length: Int)
+case class square(side: Int)
+case class circle(radius: Int)

@@ -1,0 +1,14 @@
+package org.com.test
+
+import org.scalatest._
+import org.scalatest.Assertions._
+import collection.mutable.Stack
+
+class SquareRootTest extends FlatSpec {
+
+  "Square root" should "work for values greater than zero" in {
+    val stack = new Stack[Int]
+    stack
+    assert(1 == 1)
+  }
+}

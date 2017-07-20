@@ -1,0 +1,33 @@
+package org.com.sample.spark;
+
+public class CrowPot {
+	public static void main(String args[]) {
+		int[] input = {};
+		CrowPot ob = new CrowPot();
+		ob.heapify(input);
+		System.out.println(input);
+	}
+
+	public void heapify(int[] input1) {
+		int n = input1.length;
+		for (int i = n / 2; i >= 0; i--) {
+			minHeapify(input1, i);
+		}
+	}
+
+	public void minHeapify(int[] input1, int position) {
+		if (position <= 0)
+			return;
+		int parrent = position - 1 / 2;
+		if (input1[parrent] < input1[position]) {
+			swap(input1, position, parrent);
+		}
+		minHeapify(input1, parrent);
+	}
+
+	void swap(int[] input1, int pos1, int pos2) {
+		int t = input1[pos1];
+		input1[pos1] = input1[pos2];
+		input1[pos2] = t;
+	}
+}

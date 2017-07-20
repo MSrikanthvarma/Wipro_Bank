@@ -1,0 +1,18 @@
+package org.com.example.test
+
+import org.scalatest._
+import collection.mutable.Stack
+import org.scalatest.junit.JUnitRunner
+import org.junit.runner.RunWith
+import org.scalatest.BeforeAndAfter
+
+@RunWith(classOf[JUnitRunner])
+class SquareRootTest extends FlatSpec {
+  "A Stack" should "pop values in last-in-first-out order" in {
+    val stack = new Stack[Int]
+    stack.push(1)
+    stack.push(2)
+    assert(stack.pop() === 2)
+    assert(stack.pop() === 1)
+  }
+}

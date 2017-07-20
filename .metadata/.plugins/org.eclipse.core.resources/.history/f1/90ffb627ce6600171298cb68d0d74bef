@@ -1,0 +1,17 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class SquareRootTest {
+
+	@Test
+	public void testSquareRoot() {
+		
+	}
+
+	@Test
+	public void testSquareRoot1() {
+		
+	}
+
+}

@@ -1,0 +1,19 @@
+package org.com.example
+
+import org.junit.Assert._
+
+class SquareRoot {
+  val squareRoot = new PartialFunction[Double, Double] {
+    def isDefinedAt(x: Double) = {
+      x >= 0
+    }
+    def apply(x: Double) = {
+      math.sqrt(x)
+    }
+  }
+}
+
+object SquareRootTest extends App {
+  val root = new SquareRoot
+  println(root.squareRoot(4))
+}

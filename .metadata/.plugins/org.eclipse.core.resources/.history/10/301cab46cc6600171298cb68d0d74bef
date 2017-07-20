@@ -1,0 +1,15 @@
+package test
+
+import org.scala.PartialFunction.SquareRoot
+import org.junit.Assert._
+import org.junit.Test
+import org.junit.runner.RunWith
+import org.scalatest.junit.JUnitRunner
+
+@RunWith(classOf[JUnitRunner])
+class SquareRootTest {
+  @Test
+  def testSquareRoot() {
+   
+  }
+}

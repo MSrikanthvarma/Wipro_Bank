@@ -1,0 +1,21 @@
+package org.com.example.test
+
+import org.scalatest._
+import collection.mutable.Stack
+import org.scalatest.junit.JUnitRunner
+import org.junit.runner.RunWith
+import org.scalatest.BeforeAndAfter
+
+@RunWith(classOf[JUnitRunner])
+class SquareRootTest extends FunSuite with BeforeAndAfter {
+  var stack: Stack[Int] = _
+
+  test("pop is invoked on a non-empty stack") {
+    stack.push(1)
+    stack.push(2)
+    val oldSize = stack.size
+    val result = stack.pop()
+    assert(result === 2)
+
+  }
+}

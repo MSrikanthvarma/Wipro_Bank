@@ -1,0 +1,7 @@
+package org.scala.dependencyInjection
+
+class Application(messageService: MessageService) extends Consumer {
+  def processMessage(message: String, reciever: String) {
+    messageService.sendMessage(message, reciever)
+  }
+}

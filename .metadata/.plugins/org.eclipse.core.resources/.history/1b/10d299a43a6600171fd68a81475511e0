@@ -1,0 +1,5 @@
+
+object conversions {
+  val a = Rupee(35)
+  println(a.value)
+}

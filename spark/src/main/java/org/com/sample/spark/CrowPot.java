@@ -1,0 +1,54 @@
+package org.com.sample.spark;
+
+import java.util.Arrays;
+
+public class CrowPot {
+	public static void main(String args[]) {
+		int[] input = { 58, 5 };
+		CrowPot ob = new CrowPot();
+		System.out.println(CrowPot.ThirstyCrowProblem(input, 1));
+	}
+
+	public static int ThirstyCrowProblem(int[] input1, int input2) {
+		Arrays.sort(input1);
+		int count = 0;
+		int result = 0;
+		int length = input1.length;
+		for (int i = 0; i < input2; i++) {
+			result = result + (getStones(input1[i], count) * length--);
+			count = count + input1[i];
+		}
+		return result;
+	}
+
+	static int getStones(int pot, int count) {
+		if (pot - count > 0) {
+			return pot - count;
+		} else {
+			return 0;
+		}
+	}
+
+	public void heapify(int[] input1) {
+		int n = input1.length;
+		for (int i = n / 2; i >= 0; i--) {
+			minHeapify(input1, i);
+		}
+	}
+
+	public void minHeapify(int[] input1, int position) {
+		if (position <= 0)
+			return;
+		int parrent = position - 1 / 2;
+		if (input1[parrent] < input1[position]) {
+			swap(input1, position, parrent);
+		}
+		minHeapify(input1, parrent);
+	}
+
+	void swap(int[] input1, int pos1, int pos2) {
+		int t = input1[pos1];
+		input1[pos1] = input1[pos2];
+		input1[pos2] = t;
+	}
+}

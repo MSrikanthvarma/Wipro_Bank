@@ -1,0 +1,81 @@
+import org.com.example.test.SquareRootTest;
+import org.junit.runner.JUnitCore;
+
+import static org.junit.Assert.*;
+import junit.framework.Assert;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.runner.JUnitCore;
+import org.junit.runner.Result;
+import org.junit.runner.notification.Failure;
+
+public class TestRunner {
+
+	Ball ball;
+
+	/**
+	 * @throws java.lang.Exception
+	 */
+	@Before
+	public void setUp() throws Exception {
+		System.out.println("Setting up ...");
+		Point2D p = new Point2D(0, 0);
+		ball = new Ball(p);
+	}
+
+	/**
+	 * @throws java.lang.Exception
+	 */
+	@After
+	public void tearDown() throws Exception {
+		System.out.println("Tearing down ...");
+		ball = null;
+	}
+
+	/**
+	 * Test method for {@link Ball#getCoordinates()}.
+	 */
+	@Test
+	public void testGetCoordinates() {
+		assertNotNull(ball); // don't need Assert. because of the import
+								// statement above.
+		Assert.assertEquals(ball.getCoordinates().getX(), 0);
+		Assert.assertEquals(ball.getCoordinates().getY(), 0);
+	}
+
+	/**
+	 * Test method for {@link Ball#setCoordinates(Point2D)}.
+	 */
+	@Test
+	public void testSetCoordinates() {
+		Assert.assertNotNull(ball);
+		Point2D p = new Point2D(99, 99);
+		ball.setCoordinates(p);
+		Assert.assertEquals(ball.getCoordinates().getX(), 99);
+		Assert.assertEquals(ball.getCoordinates().getY(), 99);
+	}
+
+	/**
+	 * Test method for {@link Ball#Ball(Point2D)}.
+	 */
+	@Test
+	public void testBall() {
+		Point2D p = new Point2D(49, 30);
+		ball = new Ball(p);
+		Assert.assertNotNull(ball);
+		Assert.assertEquals(ball.getCoordinates().getX(), 49);
+		Assert.assertEquals(ball.getCoordinates().getY(), 30);
+
+		// fail("Not yet implemented");
+	}
+
+	public static void main(String[] args) {
+		Result result = JUnitCore.runClasses(BallTest.class);
+		for (Failure failure : result.getFailures()) {
+			System.out.println(failure.toString());
+		}
+		System.out.println(result.wasSuccessful());
+	}
+
+}

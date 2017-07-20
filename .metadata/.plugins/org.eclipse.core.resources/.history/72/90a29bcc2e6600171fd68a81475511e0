@@ -1,0 +1,9 @@
+package org.scala.CaseClass
+
+object Area {
+  
+}
+
+case class Rectangle(length: Int, width: Int)
+case class square(side: Int)
+case class circle(radius: Int)

@@ -1,0 +1,8 @@
+package test
+
+import org.scala.PartialFunction.SquareRoot
+
+class SquareRootTest {
+  val result = SquareRoot.squareRoot.isDefinedAt(10)
+
+}

@@ -1,0 +1,15 @@
+package org.com.dependencyInjection
+
+import org.junit.Test;
+import org.hamcrest.MatcherAssert._
+import org.hamcrest.Matchers._
+
+class TestClass {
+
+  @Test
+  def testEmailService() {
+    val injector: ServiceInjector = new EmailServiceInjector()
+    val result = injector.getConsumer().processMessage("Hi how are you", "bharath.8199@gmail.com")
+    println(result)
+  }
+}

@@ -1,0 +1,6 @@
+package org.com.test
+
+object SquareRootTest extends App {
+  val ob: SquareRoot = new SquareRoot
+  println(ob.squareRoot(2))
+}

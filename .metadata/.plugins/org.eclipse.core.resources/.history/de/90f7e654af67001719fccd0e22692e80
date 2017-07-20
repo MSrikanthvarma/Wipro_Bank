@@ -1,0 +1,13 @@
+package org.com.implicits
+
+import org.junit.Test;
+import org.hamcrest.MatcherAssert._
+import org.hamcrest.Matchers._
+
+class TestClass {
+
+  @Test
+  def testImplicit() {
+    val maximum = Maximum.max(10, 20)
+  }
+}

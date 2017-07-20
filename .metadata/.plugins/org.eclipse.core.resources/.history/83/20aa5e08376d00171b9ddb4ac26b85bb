@@ -1,0 +1,18 @@
+package com.bankproject;
+
+public class WiproBank {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+	void deposite(int amount) {
+
+	}
+}
+
+class account {
+	int balance, avail_balance, age, min_balance;
+	String name, address;
+}

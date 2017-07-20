@@ -1,0 +1,8 @@
+package org.scala.dependencyInjection
+
+object SendMessageApp {
+  def main(args: Array[String]): Unit = {
+
+    ServiceInjector injector = new EmailServiceInjector()
+  }
+}

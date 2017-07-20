@@ -1,0 +1,10 @@
+package org.scala.implicitExple
+
+class max {
+  def max[T](a: T, b: T)(implicit $ev1: Function1[T, Ordered[T]]): T = if ($ev1(a) < b) b else a
+}
+
+object maxop extends App {
+  val ob = new max
+  println()
+}

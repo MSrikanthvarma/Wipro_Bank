@@ -1,0 +1,8 @@
+
+
+class CompanionObjectUse {
+
+}
+
+case class Dollar(value: Int)
+case class Euro(value: Int)

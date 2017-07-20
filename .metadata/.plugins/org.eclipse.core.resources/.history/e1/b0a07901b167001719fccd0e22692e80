@@ -1,0 +1,9 @@
+package org.com.dependencyInjection
+
+import org.junit.Test;
+import org.hamcrest.MatcherAssert._
+import org.hamcrest.Matchers._
+
+class TestClass {
+
+}

@@ -1,0 +1,5 @@
+package org.scala.dependencyInjection
+
+trait Consumer {
+  def processMessage(message: String, reciever: String)
+}

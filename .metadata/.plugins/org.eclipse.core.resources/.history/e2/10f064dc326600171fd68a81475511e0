@@ -1,0 +1,38 @@
+package org.scala.CaseClass
+
+object Area extends App {
+  val shape: Shape = Rectangle(3, 4)
+  val area = shape match {
+    case Rectangle(len, wid) => len * wid
+    case Circle(rad)         => math.Pi * rad * rad
+    case Square(side)        => side * side
+    case _                   => print("Specified shape is not present")
+  }
+  println(area)
+}
+
+trait Shape {
+  def area(shape: Shape): Int
+}
+
+case class Rectangle(length: Int, width: Int) extends Shape
+case class Square(side: Int) extends Shape
+case class Circle(radius: Int) extends Shape
+
+//Companion objects 
+object Rectangle {
+  def area(rectangle: Rectangle) = {
+    rectangle.length * rectangle.width
+  }
+}
+object Square {
+  def area(square: Square) = {
+    square.side * square.side
+  }
+}
+object Circle {
+  def area(circle: Circle) = {
+    math.Pi * circle.radius * circle.radius
+  }
+}
+

@@ -1,0 +1,13 @@
+package org.com.test
+
+import org.scalatest._
+import collection.mutable.Stack
+
+class SquareRootTest extends FlatSpec {
+
+  "A Stack" should "pop values " in {
+    val stack = new Stack[Int]
+
+    assert(1 == 1)
+  }
+}

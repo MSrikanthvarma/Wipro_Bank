@@ -1,0 +1,5 @@
+package org.scala.implicitExple
+
+object Maximum {
+  
+}

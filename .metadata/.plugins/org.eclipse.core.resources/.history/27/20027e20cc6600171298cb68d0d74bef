@@ -1,0 +1,16 @@
+package test
+
+import org.scala.PartialFunction.SquareRoot
+import org.junit.Assert._
+import org.junit.Test
+import org.junit.runner.RunWith
+
+@RunWith(classOf[])
+class SquareRootTest {
+  @Test
+  def testSquareRoot() {
+    val ob = new SquareRoot()
+    ob.squareRoot(4)
+    assertTrue(true)
+  }
+}

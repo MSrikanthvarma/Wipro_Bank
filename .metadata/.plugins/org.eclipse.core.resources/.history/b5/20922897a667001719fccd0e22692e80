@@ -1,0 +1,14 @@
+package org.com.example
+
+import org.junit.Assert._;
+
+import org.junit.Test;
+
+class TestClass {
+
+  @Test
+  def test() {
+    val ob = new SquareRoot
+    println(ob.squareRoot(4))
+  }
+}

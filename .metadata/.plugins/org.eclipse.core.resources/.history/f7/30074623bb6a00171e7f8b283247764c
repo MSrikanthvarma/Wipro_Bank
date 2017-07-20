@@ -1,0 +1,5 @@
+package org.com.spring.mySpring;
+
+public class MySpringBeanDependency {
+	private MessageService messageService;
+}

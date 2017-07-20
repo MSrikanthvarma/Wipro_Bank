@@ -1,0 +1,16 @@
+package org.com.example
+
+import org.junit.Assert._;
+import org.junit.Test;
+import org.hamcrest.MatcherAssert._
+import org.hamcrest.Matchers._
+
+class TestClass {
+
+  @Test
+  def test() {
+    val ob = new SquareRoot
+    assertThat("", 2, is(equalTo(ob.squareRoot(4))))
+    println(ob.squareRoot(-4))
+  }
+}

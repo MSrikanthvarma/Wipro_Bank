@@ -1,0 +1,17 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class SquareRootTest {
+
+	@Test
+	public void testSquareRoot() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testSquareRoot1() {
+		fail("Not yet implemented");
+	}
+
+}

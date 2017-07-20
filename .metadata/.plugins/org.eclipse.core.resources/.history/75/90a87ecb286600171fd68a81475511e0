@@ -1,0 +1,13 @@
+package org.scala.PartialFunction;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class SquareRootTest {
+
+	@Test
+	public void testSquareRoot() {
+		boolean result = SquareRoot.squareRoot().isDefinedAt(10)
+	}
+}

@@ -1,0 +1,13 @@
+package org.com.example;
+
+import org.junit.runner.JUnitCore;
+import org.junit.runner.RunWith;
+import org.junit.runners.Suite;
+import org.junit.runners.Suite.SuiteClasses;
+
+public class AllTests {
+
+public static void main(String args[]){
+	JUnitCore.runClasses(Sample.class)
+}
+}

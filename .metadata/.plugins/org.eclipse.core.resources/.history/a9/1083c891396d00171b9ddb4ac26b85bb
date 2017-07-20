@@ -1,0 +1,15 @@
+package com.bankproject;
+
+public class MiniStatement {
+
+	public static void main(String[] args) {
+		WiproBank customer1 = new WiproBank();
+		WiproBank customer2 = new WiproBank();
+		customer1.deposite(2000);
+		customer1.withdrawal(500);
+	}
+
+	public void getMiniStatement(WiproBank customer) {
+
+	}
+}

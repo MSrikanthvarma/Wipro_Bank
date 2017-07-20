@@ -1,0 +1,29 @@
+package org.scala.PartialFunction;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class SquareRootTest {
+
+	@Test
+	public void testSquareRoot() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testMain() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testDelayedInit() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testExecutionStart() {
+		fail("Not yet implemented");
+	}
+
+}

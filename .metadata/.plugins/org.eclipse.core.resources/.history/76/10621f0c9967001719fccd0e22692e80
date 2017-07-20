@@ -1,0 +1,12 @@
+package org.com.example.test
+
+import org.scalatest._
+import collection.mutable.Stack
+import org.scalatest.junit.JUnitRunner
+import org.junit.runner.RunWith
+import org.scalatest.BeforeAndAfter
+import junit.framework.TestCase
+
+class SquareRootTest extends TestCase {
+
+}

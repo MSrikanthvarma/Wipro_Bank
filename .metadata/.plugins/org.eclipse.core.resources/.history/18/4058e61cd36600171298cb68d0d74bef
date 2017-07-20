@@ -1,0 +1,9 @@
+package org.com.scalaTests
+
+import org.junit.runner.RunWith
+import org.junit.runners.Suite
+
+@RunWith(classOf[])
+class TestSuite {
+  
+}

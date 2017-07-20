@@ -1,0 +1,8 @@
+package org.com.test
+
+import org.scalatest.FlatSpec
+
+class SquareRootTest extends FlatSpec {
+  val ob: SquareRoot = new SquareRoot
+  println(ob.squareRoot(2))
+}

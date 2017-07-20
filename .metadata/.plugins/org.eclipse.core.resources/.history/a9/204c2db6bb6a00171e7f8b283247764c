@@ -1,0 +1,13 @@
+package org.com.spring.mySpring;
+
+public class MySpringBeanDependency {
+	private MessageService messageService;
+
+	public void setService(MessageService messageService) {
+		this.messageService = messageService;
+	}
+
+	public void run(String str) {
+		messageService.sendMessage(str);
+	}
+}

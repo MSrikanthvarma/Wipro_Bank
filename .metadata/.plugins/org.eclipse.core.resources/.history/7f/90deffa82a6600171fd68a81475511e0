@@ -1,0 +1,15 @@
+package org.scala.PartialFunction;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class SquareRootTest {
+
+	@Test
+	public void test() {
+		double result = (double) SquareRoot.squareRoot().apply(10);
+		assertEquals(2, result);
+	}
+
+}

@@ -1,0 +1,13 @@
+package org.com.example.test
+
+import junit.framework.TestCase
+import org.com.example.SquareRoot
+
+class SquareRootTest extends TestCase {
+  var root: SquareRoot = null
+
+  @Override
+  def setUp() {
+    root = new SquareRoot
+  }
+}

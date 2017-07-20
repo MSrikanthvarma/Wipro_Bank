@@ -1,0 +1,18 @@
+package org.scala.CaseClass
+
+object Area {
+  val shape: Shape = circle(3)
+  shape match {
+    case Rectangle(len, wid) => len * wid
+    case circle(rad)         => math.Pi * rad * rad
+    case square(side)        => side * side
+    case _                   => print("")
+
+  }
+}
+
+case class Rectangle(length: Int, width: Int) extends Shape
+case class square(side: Int) extends Shape
+case class circle(radius: Int) extends Shape
+
+trait Shape

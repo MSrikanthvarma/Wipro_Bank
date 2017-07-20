@@ -1,0 +1,19 @@
+package org.com.spring.mySpring;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
+public class MySpringBeanDependency {
+	private MessageService messageService;
+
+	@Autowired
+
+	void setService(MessageService messageService) {
+		this.messageService = messageService;
+	}
+
+	public void run(String str) {
+		messageService.sendMessage(str);
+	}
+}

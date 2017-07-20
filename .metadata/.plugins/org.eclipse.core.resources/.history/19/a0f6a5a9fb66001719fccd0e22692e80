@@ -1,0 +1,11 @@
+package org.com.test
+
+import org.scalatest._
+
+class SquareRootTest extends FlatSpec {
+
+  "Square root" should "work for values greater than zero" in {
+    val sqrt = new SquareRoot
+    assert(sqrt.squareRoot(4) == 2)
+  }
+}

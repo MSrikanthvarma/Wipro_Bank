@@ -1,0 +1,17 @@
+package org.com.caseclass
+
+import org.junit.Test;
+import org.hamcrest.MatcherAssert._
+import org.hamcrest.Matchers._
+
+class TestClass {
+
+  @Test
+  def testRectangle() {
+    val area = new Area
+    var result: Any = area.area(Rectangle(3, 4))
+    println(result)
+    assertThat("Failed", 12, is(equalTo(result)))
+    println("Succesfully verified area of rectangle")
+  }
+}

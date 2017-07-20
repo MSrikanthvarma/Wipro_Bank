@@ -1,0 +1,5 @@
+package com.mkyong.output;
+
+public class OutputHelper {
+	IOutputGenerator outputGenerator;
+}
